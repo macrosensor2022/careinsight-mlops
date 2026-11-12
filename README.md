@@ -226,6 +226,28 @@ A complete independent reproduction and leakage audit of the original feature-se
 
 The following metrics were recorded in the original research notebook.
 
+
+### Deployed Model
+
+**Histogram-based Gradient Boosting**
+
+Although Stacking achieved the highest historical test ROC-AUC,
+Gradient Boosting delivered nearly identical discrimination
+with a simpler inference pipeline.
+
+The deployed model is stored as a serialized scikit-learn
+pipeline and served through FastAPI.
+
+The evaluation metrics above are historical test results,
+not continuously measured production performance.
+
+For detailed information about model assumptions, performance,
+training-serving consistency, and responsible use, see the
+[Model Card](MODEL_CARD.md).
+
+---
+
+
 ### Historical Held-Out Test Results
 
 | Model | ROC-AUC | F1 | Precision | Recall |
