@@ -3,7 +3,14 @@ import os
 import requests
 import streamlit as st
 
-API_URL = os.getenv("API_URL", "http://localhost:8000")
+API_URL = os.getenv("API_URL")
+
+if not API_URL:
+    try:
+        API_URL = st.secrets["API_URL"]
+    except (FileNotFoundError, KeyError):
+        API_URL = "http://localhost:8000"
+
 
 st.set_page_config(
     page_title="CareInsight ML",
@@ -67,7 +74,7 @@ if st.button("Predict", type="primary"):
         response = requests.post(
             f"{API_URL}/predict",
             json={"features": features},
-            timeout=15
+            timeout=90
         )
 
         response.raise_for_status()
