@@ -1,0 +1,5 @@
+Model,Test ROC-AUC,F1,Precision,Recall,Train-Test Gap
+Logistic Regression,0.7628,0.7386,0.7992,0.6866,-0.0014
+Random Forest,0.7678,0.7379,0.8063,0.6802,0.0616
+Gradient Boosting,0.7683,0.7344,0.8114,0.6707,0.0061
+Stacking,0.7694,0.7361,0.8101,0.6745,0.0261

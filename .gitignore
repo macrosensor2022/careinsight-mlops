@@ -1,0 +1,30 @@
+
+# Python virtual environments
+.venv/
+venv/
+
+# Python temporary files
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# MLflow local storage
+mlruns/
+mlartifacts/
+mlflow.db
+
+# Raw datasets
+data/
+*.csv
+!reports/model_comparison.csv
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Editor and operating system
+.vscode/
+.DS_Store
