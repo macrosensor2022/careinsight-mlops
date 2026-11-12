@@ -28,3 +28,6 @@ data/
 # Editor and operating system
 .vscode/
 .DS_Store
+
+
+experiments/
