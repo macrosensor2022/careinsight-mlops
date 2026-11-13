@@ -37,6 +37,43 @@ Beyond model training, CareInsight demonstrates how to develop, validate, contai
 
 **---**
 
+### Application Preview
+
+#### 1. Interactive Prediction
+
+Enter fictional survey characteristics:
+
+![Prediction Interface](docs/images/prediction.png)
+
+View the model's prediction:
+
+![Prediction Result](docs/images/prediction_result.png)
+
+#### 2. Model Performance Dashboard
+
+Explore the historical evaluation of four machine learning models.
+
+![Model Performance](docs/images/performance.png)
+
+#### 3. Compare Profiles
+
+Compare two fictional profiles:
+
+![Profile Comparison Inputs](docs/images/comparison.png)
+
+View the comparison results:
+
+![Profile Comparison Results](docs/images/comparison_result.png)
+
+#### 4. Age Sensitivity Explorer
+
+Explore how predictions change across age values while other inputs remain fixed.
+
+![Age Sensitivity Explorer](docs/images/age_sensitivity.png)
+
+---
+
+
 ## 2. Problem Statement
 
 Caregiver arrangements are an important dimension of disability-related research.
